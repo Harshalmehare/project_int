@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>समाज को आर्थिक स्वतंत्रता की ओर</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            background: url('data:image/jpeg;base64,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') no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            animation: fadeIn 1s;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            animation: fadeIn 1.5s;
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s;
+            position: relative;
+            z-index: 1;
+            margin: 5px;
+            /* Add some margin between buttons */
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        .donation-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .donation-option {
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+        }
+
+        .testimonial {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        #donate p {
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">indebtfreefoundation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <h1>समाज को आर्थिक स्वतंत्रता की ओर</h1>
+        <p>हम कर्ज से राहत, कानूनी सुरक्षा और स्थिरता प्रदान करते हैं।</p>
+        <div>
+            <div>
+                <a href="#join" class="btn btn-primary">हमसे जुड़ें</a>
+                <a href="#donate" class="btn btn-primary">डोनेट करें</a>
+                <a href="Aboutus.html" class="btn btn-primary">अधिक जानें</a>
+            </div>
+    </header>
+
+    <!-- Join Us Section -->
+    <!-- Join Us Section -->
+    <div class="container my-5" id="join">
+        <h2 class="section-title">हमसे जुड़ें</h2>
+        <p>आपका छोटा योगदान, बड़ा बदलाव। ₹1,000/माह से जुड़ें।</p>
+        <iframe src="https://forms.gle/v5Ka3xsXD4x6PUpDA" width="100%" height="800" frameborder="0" marginheight="0"
+            marginwidth="0">
+            Loading…
+        </iframe>
+    </div>
+
+
+    <div class="container my-5" id="donate">
+        <h2 class="section-title">डोनेशन करने का विकल्प</h2>
+        <p>आपका योगदान हमारे कर्ज मुक्त अभियान को बल देगा।</p>
+      
+        <!-- Donor Details Form -->
+        <div class="donor-details">
+          <input type="text" id="donorName" class="form-control my-2" placeholder="अपना नाम दर्ज करें" required />
+          <input type="email" id="donorEmail" class="form-control my-2" placeholder="अपना ईमेल दर्ज करें" required />
+          <input type="tel" id="donorPhone" class="form-control my-2" placeholder="अपना फ़ोन नंबर दर्ज करें" required />
+        </div>
+      
+        <!-- Donation Options -->
+        <div class="donation-options">
+          <div class="donation-option">
+            <h5>₹500</h5>
+            <button class="btn btn-primary" onclick="makePayment(500)">डोनेट करें</button>
+          </div>
+          <div class="donation-option">
+            <h5>₹1,000</h5>
+            <button class="btn btn-primary" onclick="makePayment(1000)">डोनेट करें</button>
+          </div>
+          <div class="donation-option">
+            <h5>₹5,000</h5>
+            <button class="btn btn-primary" onclick="makePayment(5000)">डोनेट करें</button>
+          </div>
+          <div class="donation-option">
+            <h5>₹10,000</h5>
+            <button class="btn btn-primary" onclick="makePayment(10000)">डोनेट करें</button>
+          </div>
+          <div class="donation-option">
+            <h5>या अपनी राशि डालें</h5>
+            <input type="number" id="customAmount" class="form-control" placeholder="राशि डालें" />
+            <button class="btn btn-primary" onclick="customPayment()">डोनेट करें</button>
+          </div>
+        </div>
+        <p>आपका योगदान हमारी योजनाओं को साकार करेगा!</p>
+      </div>
+    
+
+    <!-- Become a Director Section -->
+    <!-- Become a Director Section -->
+    <div class="container my-5" id="become-director">
+        <h2 class="section-title">डायरेक्टर बनने की प्रक्रिया</h2>
+
+        <!-- Card for Director Opportunity -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <p>100 नए सदस्य जोड़ने पर डायरेक्टर बनने का अवसर मिलेगा!</p>
+            </div>
+        </div>
+
+        <!-- Card for Donation Requirement -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <p>₹1,00,000 का डोनेशन करके भी डायरेक्टर बन सकते हैं!</p>
+            </div>
+        </div>
+
+        <!-- Card for Incentive for Joining Members -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <p>जोड़ने वाले सदस्य के लिए 10% प्रोत्साहन राशि।</p>
+            </div>
+        </div>
+
+        <!-- Card for Director Benefits -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">डायरेक्टर के लाभ:</h5>
+                <ul>
+                    <li>सामाजिक पहचान और सम्मान।</li>
+                    <li>नौकरियों और निवेश के अवसर।</li>
+                    <li>नए सदस्य जोड़ने पर अतिरिक्त लाभ।</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Display of Added Members Section -->
+    <div class="container my-5" id="members">
+        <h2 class="section-title">सदस्य जोड़ने का प्रदर्शन</h2>
+        <p>डायरेक्टर के आधार पर व्यवस्थित सदस्य का विवरण:</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>सदस्य का नाम</th>
+                    <th>संपर्क जानकारी</th>
+                    <th>जोड़ने की तारीख</th>
+                    <th>प्रोफ़ाइल चित्र</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>राधिका शर्मा</td>
+                    <td>radhika@example.com</td>
+                    <td>2023-01-15</td>
+                    <td><img src="https://via.placeholder.com/50" alt="Profile" class="img-fluid"></td>
+                </tr>
+                <tr>
+                    <td>सौरव मेहता</td>
+                    <td>saurav@example.com</td>
+                    <td>2023-02-20</td>
+                    <td><img src="https://via.placeholder.com/50" alt="Profile" class="img-fluid"></td>
+                </tr>
+                <tr>
+                    <td>नीता वर्मा</td>
+                    <td>neeta@example.com</td>
+                    <td>2023-03-10</td>
+                    <td><img src="https://via.placeholder.com/50" alt="Profile" class="img-fluid"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Donation and Contribution Tracking Section -->
+    <div class="container my-5" id="tracking">
+        <h2 class="section-title">डोनेशन और योगदान की ट्रैकिंग</h2>
+        <div class="card">
+            <div class="card-body text-center">
+                <p>आपके योगदान की पूरी जानकारी और उपयोग:</p>
+                <p>मासिक योगदान: <strong>₹1,000</strong></p>
+                <p>सामूहिक योगदान राशि: <strong>₹25,00,000+</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Foundation's Objectives and Strategies Section -->
+    <div class="container my-5" id="objectives">
+        <h2 class="section-title">फाउंडेशन के उद्देश्य और रणनीतियाँ</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">कर्ज से मुक्ति योजना:</h5>
+                        <p class="card-text">प्रत्येक सदस्य मासिक ₹1,000 का योगदान करेगा, जो कर्ज राहत में उपयोग होगा।
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">कृषि और पर्यटन में निवेश:</h5>
+                        <p class="card-text">किसानों को स्मार्ट कृषि, जैविक खेती, जल प्रबंधन में जोड़ा जाएगा।</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">फूड वेस्ट मैनेजमेंट:</h5>
+                        <p class="card-text">खाद्य अपशिष्ट प्रबंधन और पुनः उपयोग के लिए प्रणाली विकसित करना।</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">प्रशिक्षण और रोजगार:</h5>
+                        <p class="card-text">बेरोजगारों को प्रशिक्षित करना और रोजगार सृजन में योगदान देना।</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">राजनीतिक सक्रियता:</h5>
+                        <p class="card-text">युवा नेताओं और कार्यकर्ताओं को राजनीति में शामिल करना।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How Your Contribution is Utilized Section -->
+    <div class="container my-5" id="utilization">
+        <h2 class="section-title">आपके योगदान का उपयोग कैसे होता है?</h2>
+        <h5>इन्फोग्राफिक और पाई चार्ट:</h5>
+        <img src="image.png" alt="Contribution Utilization Infographic" class="img-fluid mb-4">
+        <ul>
+            <li>25% कर्ज माफी - "बैंकों और वित्तीय संस्थाओं से कर्ज निवारण में सहायक।"</li>
+            <li>15% प्रशासनिक खर्च - "संगठन संचालन और सेवाओं को प्रभावी बनाए रखना।"</li>
+            <li>10% आपातकालीन फंड - "आपातकालीन संकटों से निपटने के लिए तैयार।"</li>
+            <li>50% निवेश - "कृषि, पर्यटन, और फूड वेस्ट मैनेजमेंट जैसे क्षेत्रों में निवेश।"</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <h5>संपर्क जानकारी</h5>
+            <p><strong>ईमेल:</strong> <a href="mailto:info@debtfreefoundation.com">info@debtfreefoundation.com</a></p>
+            <p><strong>फोन:</strong> +91-XXXXXXXXXX</p>
+            <p><strong>सोशल मीडिया लिंक:</strong> <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a
+                    href="#">Instagram</a>, <a href="#">LinkedIn</a></p>
+            <p><strong>कानूनी नोटिस:</strong> "कर्ज मुक्त भारत अभियान का हिस्सा बनने के लिए आपका स्वागत है!"</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+        function makePayment(amount) {
+          const donorName = document.getElementById("donorName").value;
+          const donorEmail = document.getElementById("donorEmail").value;
+          const donorPhone = document.getElementById("donorPhone").value;
+      
+          if (!donorName || !donorEmail || !donorPhone) {
+            alert("कृपया अपना नाम, ईमेल, और फ़ोन नंबर भरें।");
+            return;
+          }
+      
+          fetch("/create-order", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ amount, donorName, donorEmail, donorPhone }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success) {
+                const options = {
+                  key: "YOUR_RAZORPAY_KEY_ID",
+                  amount: data.amount,
+                  currency: "INR",
+                  name: donorName,
+                  description: "Donation Payment",
+                  order_id: data.order_id,
+                  prefill: {
+                    name: donorName,
+                    email: donorEmail,
+                    contact: donorPhone,
+                  },
+                  theme: {
+                    color: "#3399cc",
+                  },
+                  handler: function (response) {
+                    // Handle successful payment
+                    alert("Payment Successful!");
+                    fetch("/verify-payment", {
+                      method: "POST",
+                      headers: {
+                        "Content-Type": "application/json",
+                      },
+                      body: JSON.stringify({
+                        paymentId: response.razorpay_payment_id,
+                        orderId: response.razorpay_order_id,
+                        donorName,
+                        donorEmail,
+                        donorPhone,
+                      }),
+                    });
+                  },
+                };
+      
+                const rzp = new Razorpay(options);
+                rzp.open();
+              } else {
+                alert("Failed to create order. Please try again.");
+              }
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              alert("Something went wrong. Please try again.");
+            });
+        }
+      
+        function customPayment() {
+          const amount = document.getElementById("customAmount").value;
+          if (amount && amount > 0) {
+            makePayment(amount);
+          } else {
+            alert("Please enter a valid amount!");
+          }
+        }
+      </script>
+</body>
+
+</html>
